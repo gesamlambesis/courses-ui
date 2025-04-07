@@ -62,7 +62,22 @@ export const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-`
+`;
+
+export const CheckLabel = styled.label`
+  display: block;
+  margin-bottom: 8;
+  color: #000000;
+  font-size: 12px;
+  margin-right: 5px;
+`;
+
+export const CheckWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 5px;
+`;
 
 export type Column<T> = {
   key: keyof T

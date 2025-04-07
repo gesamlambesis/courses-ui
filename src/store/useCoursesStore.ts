@@ -7,7 +7,7 @@ export const useCoursesStore = create<CoursesState>((set) => ({
 
   fetchCourses: async () => {
     try {
-      const res = await fetch('http://192.168.1.71:8080/api/courses'); // TODO: setup a file with all the endpoints pointing to prod or dev.
+      const res = await fetch('http://localhost:8080/api/courses'); // TODO: setup a file with all the endpoints pointing to prod or dev.
       const data = await res.json();
       set({ courses: data })
     } catch (error) {

@@ -6,6 +6,8 @@ import {
   ActionButtonWrapper,
   Button,
   CancelButton,
+  CheckLabel,
+  CheckWrapper,
   FormContainer,
   Header,
   Input,
@@ -173,18 +175,10 @@ const Students = () => {
             onChange={handleOnChange}
           />
 
-          <div
-            style={{
-              display: 'flex',
-              flexWrap: 'wrap',
-              gap: '12px',
-              marginTop: '5px',
-            }}
-          >
+          <CheckWrapper>
             {courses.map((option) => (
-              <label
-                key={option.code}
-                style={{ display: 'block', marginBottom: 8, color: '#000000', fontSize: '12px', marginRight: '5px' }}
+              <CheckLabel
+                key={option.code}                
               >
                 <input
                   type="checkbox"
@@ -193,9 +187,9 @@ const Students = () => {
                   onChange={() => handleChange(option.code)}
                 />
                 {option.title}
-              </label>
+              </CheckLabel>
             ))}
-          </div>
+          </CheckWrapper>
 
           <ActionButtonWrapper>
             <CancelButton
