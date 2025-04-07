@@ -1,54 +1,28 @@
-# React + TypeScript + Vite
+# Courses UI
+This project is a simple frontend application built with Vite and Zustand for state management. 
+It connects to a backend API to list and create courses and students.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Frontend: React + Vite
+### State Management: Zustand
+### API: Spring
+### Database: PostgreSQL 
 
-Currently, two official plugins are available:
+### Course Screen
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img width="1512" alt="course_screen" src="https://github.com/user-attachments/assets/64467074-76ac-47a7-94b3-62b0fe6feb25" />
 
-## Expanding the ESLint configuration
+<img width="1512" alt="course_form" src="https://github.com/user-attachments/assets/d0e38564-f81b-4eae-a7d9-4866348036dc" />
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<img width="1512" alt="course_details" src="https://github.com/user-attachments/assets/09d2e37a-5676-4102-996e-ea9ecdc55b5e" />
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Student Screen
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+<img width="1512" alt="students_screen" src="https://github.com/user-attachments/assets/def6497e-6565-4531-9cf2-b0e1e1a43f6a" />
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+<img width="1512" alt="students_details" src="https://github.com/user-attachments/assets/aaf28d92-60d8-45bc-8ac0-a201007326c2" />
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+<img width="1512" alt="student_form" src="https://github.com/user-attachments/assets/effdd976-9599-4015-b096-dccff84597a7" />
+
+### Demo
+
+https://github.com/user-attachments/assets/0dcabb0d-7cc4-4522-bab6-ac1e9f2c22f1
